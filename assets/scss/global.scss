@@ -1,0 +1,63 @@
+/*==============================================================
+
+Global
+
+File: SCSS Partial (/scss/global.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Placeholder file for all SCSS imports
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/*  Imports
+  -------------------------------------------------------- */
+
+// Compass
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/typography";
+@import "compass/utilities";
+
+// Normalize
+@import "partials/normalize"; 
+
+// Sass variables
+@import "partials/variables";
+
+// Sass mixins
+@import "partials/mixins";
+
+// Typography
+@import "partials/typography";
+
+// Various
+@import "partials/elements";
+
+// Layout 
+@import "partials/layout";
+
+// Modules
+@import "partials/modules";
+
+// Media
+@import "partials/media";
+
+// Navigation
+@import "partials/navigation";
+
+// Accessibility
+@import "partials/accessibility";
+
+// Wordpress
+@import "partials/wordpress";
+
+// Print
+@import "partials/print";

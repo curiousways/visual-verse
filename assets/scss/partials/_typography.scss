@@ -1,0 +1,77 @@
+/*==============================================================
+
+Typography
+
+File: SCSS Partial (/scss/partials/_typography.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Typographical elements
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Base
+  -------------------------------------------------------- */
+
+// Main
+body,
+button,
+input,
+select,
+textarea {
+	background: $base-bck;
+	color: $base-clr;
+	font-family: $base-fnt;
+	font-style: normal;
+	font-weight: 400;	
+	font-size: $base-fnt-size;
+	line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+
+
+/* Content Area
+  -------------------------------------------------------- */
+
+.content-area {
+
+}
+
+
+/* Sidebar
+  -------------------------------------------------------- */
+
+.sidebar {
+	h3 {
+		font-size: 1em;
+		margin-bottom: $base-num;
+	}
+}
+
+
+
+/* Links
+  -------------------------------------------------------- */
+
+a {
+	@include links-dark;
+	@include single-transition(color, 0.2s, ease-in-out, 0s);
+	text-decoration: none;
+}
+
+.read-more {
+	font-style: italic;
+}

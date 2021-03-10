@@ -1,0 +1,31 @@
+/*==============================================================
+
+Mixins
+
+File: SCSS Partial (/scss/partials/_mixins.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All mixins
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Links
+  -------------------------------------------------------- */
+
+  // Light Scheme
+ 	@mixin links-light {
+ 		@include link-colors(rgb(255,255,255), darken(rgb(255,255,255), 5%), darken(rgb(255,255,255), 5%), rgb(255,255,255), darken(rgb(255,255,255), 5%))
+ 	}
+
+  // Dark Scheme
+ 	@mixin links-dark {
+ 		@include link-colors(rgb(0,0,0), lighten(rgb(0,0,0), 45%), lighten(rgb(0,0,0), 45%), rgb(0,0,0), lighten(rgb(0,0,0), 45%))
+ 	} 	

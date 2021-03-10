@@ -1,0 +1,189 @@
+/*==============================================================
+
+Modules
+
+File: SCSS Partial (/scss/partials/_modules.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Layout modules
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+
+
+
+
+
+
+/* Header > Site Info
+  -------------------------------------------------------- */
+  
+  .site-info {
+    p {
+      margin-bottom: $base-num;
+    }
+  }
+
+
+/* Content Area > Volume / Chapter lists
+  -------------------------------------------------------- */
+
+  .list-volume {
+
+  	> li {
+
+      text-transform: uppercase;
+
+  		&:first-of-type {
+
+				&:after {
+					content: "\02dc";
+				}
+			
+			}
+  	}
+  }
+
+
+
+
+/* Content Area > Boxes
+  -------------------------------------------------------- */
+
+  .shadow {
+    display: block;
+  }
+
+
+/* Content Area > The Image
+  -------------------------------------------------------- */
+
+  .the-image {
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .archive & {
+      margin-bottom: $base-num;
+    }
+   
+  }
+
+  .the-image-credit {
+    font-style: italic;
+    //margin-top: $base-num;
+  }
+
+
+/* Content Area > Submissions
+  -------------------------------------------------------- */
+
+  .submission, .page-box {
+    .in {
+      @media #{$large} {
+        min-height: 662px;
+      }
+    }
+
+    background: rgb(254,249,243);
+    margin-bottom: $base-num*2;
+    position: relative;
+
+
+    .in {
+      padding: $base-num*2;
+    }
+
+
+    h2 {
+      font-size: 1.357em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: $base-num/2;
+    }
+
+    footer {
+      @media #{$large} {
+        position: absolute;
+        bottom: 0;
+        margin-left: 39%;
+      }
+
+      margin: $base-num*1.5 auto $base-num*2 auto;
+      text-align: center;
+    
+ 
+    }
+  }
+
+
+.submission {
+        .author {
+        font-style: italic;
+        text-align: center;
+        margin: $base-num/3 0 $base-num 0;
+      }     
+}
+  // Pages
+  .page-box {
+
+    .in {
+      min-height: 608px;
+    }
+
+    &.background {
+      
+      .page-content {
+        a {
+          @include links-light;
+        }
+        color: #fff;
+
+        @media #{$large} {
+          max-width: 280px;
+          margin: 130px 0 0 80px;
+          padding: 0;
+          text-align: justify;
+        }        
+      }
+    }
+
+    &.vv-background {
+      background: url('../img/page_background.gif') no-repeat top;
+      background-size: cover;
+    }
+
+    &.vv-logo-background {
+      background: url('../img/page_logo_background.gif') no-repeat top;
+      background-size: cover;
+    }
+  }
+
+
+/* Sidebar > Lists
+  -------------------------------------------------------- */
+
+  .list-sidebar {
+    margin-bottom: $base-num*2;
+  }
+
+
+
+
+
+
+
+

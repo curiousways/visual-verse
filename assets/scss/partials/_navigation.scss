@@ -1,0 +1,77 @@
+/*==============================================================
+
+Navigation
+
+File: SCSS Partial (/scss/partials/_navigation.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Primary, secondary & tertiary navigations
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Menus
+  -------------------------------------------------------- */
+
+	.menu {
+
+		a {
+			text-decoration: none;	
+		}
+	}
+
+	.menu-inline {
+
+		> li {
+			margin-right: $base-num;
+
+			a {
+				@include inline-block;
+				padding: $base-num;				
+			}
+		}
+	}
+
+	.menu-stacked {
+
+		> li {
+			border-bottom: 1px solid $base-clr;
+			margin-bottom: $base-num;
+			padding-bottom: $base-num;
+			position: relative;
+			line-height: 18px;
+		}
+	}
+
+	.menu-blocks {
+
+		> li {
+			@extend .menu-inline;
+			
+			a {
+				@include links-light;
+				@include single-transition(all, 0.2s, ease-in-out);
+				background: $base-clr;
+				padding-top: $base-num;
+				padding-bottom: $base-num;				
+
+				&:hover {
+					background-color: lighten($base-clr, 20%);
+				}
+
+			}
+
+	  	// Wordpress on-states
+	  	&.current-menu-item, &.current_page_item, &.current-page-ancestor, &.current-post-ancestor, &.current-menu-parent &.current-post-parent {
+				background-color: lighten($base-clr, 20%);
+			}
+
+		}
+	}

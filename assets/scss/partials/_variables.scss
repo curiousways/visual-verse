@@ -1,0 +1,62 @@
+/*==============================================================
+
+Variables
+
+File: SCSS Partial (/scss/partials/_variables.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: All variables
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Base
+  -------------------------------------------------------- */
+
+  $base-bck: rgb(218,218,218);
+	$base-clr: rgb(0,0,0); 
+	$base-fnt: "adobe-caslon-pro",serif; 
+	$base-fnt-size: 14px;
+	$base-line-height: 1.4;   
+  $base-num: 1.429em;
+
+
+/* Colors
+  -------------------------------------------------------- */	
+
+  $clr-primary: rgb(0,0,0);
+  $clr-secondary: rgb(149,149,149);
+  $clr-highlight: lighten ($clr-primary, 20%);
+
+
+/* Font size
+  -------------------------------------------------------- */ 
+  
+  @function em($target, $context: $base-fnt-size) {
+     @if $target == 0 { @return 0 }
+     @return $target / $context + 0em;
+  }
+
+  $fnt-lrg: em(26px, 16px);
+  $fnt-med: em(18px, 16px);
+  $fnt-reg: em(14px, 16px);
+  $fnt-sml: em(12px, 16px);
+
+
+  /* Breakpoints
+    -------------------------------------------------------- */
+
+    $small: "only screen and (max-width:767px)";
+    $medium: "only screen and (min-width:768px) and (max-width:1039px)";
+    $large: "only screen and (min-width:1040px)";
+
+    //@media #{$small} {
+    //  background: red;
+    // }  

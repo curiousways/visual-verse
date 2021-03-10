@@ -1,0 +1,67 @@
+/*==============================================================
+
+Layout
+
+File: SCSS Partial (/scss/partials/_layout.scss)
+Compiled to: css/global.css
+Created: 14/06/2013
+Updated: 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Description: Primary layout elements
+Author: David Flindall
+Author URI: http://juxprose.com
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+/* Site wrapper
+  -------------------------------------------------------- */
+
+  .site {
+    margin: $base-num*2 auto;
+    padding: 0 $base-num;
+    max-width: 1040px;
+  }
+
+
+/* Site header
+  -------------------------------------------------------- */
+
+  .site-header {
+    border-bottom: 1px dotted $clr-secondary;
+    margin-bottom: $base-num*2;
+    padding-bottom: $base-num; 
+  }
+
+  .site-title {
+    img {
+      height: 128px;
+    }
+  }
+
+
+/* Helpers
+  -------------------------------------------------------- */
+
+  .group {
+    @include clearfix;
+  }
+
+  .align-r {
+    text-align: right;
+  }
+
+  .align-l {
+    text-align: left;
+  }
+
+  .float-r {
+    float: right;
+  }
+
+  .float-l {
+    float: left;
+  }

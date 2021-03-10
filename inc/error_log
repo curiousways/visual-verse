@@ -1,0 +1,7 @@
+[05-Dec-2018 15:44:06 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/customizer.php on line 18
+[06-Dec-2018 02:10:20 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/customizer.php on line 18
+[06-Dec-2018 05:34:20 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/customizer.php on line 18
+[06-Dec-2018 13:53:21 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/customizer.php on line 18
+[07-Dec-2018 08:44:18 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/customizer.php on line 18
+[07-Dec-2018 14:21:46 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/customizer.php on line 18
+[13-Dec-2018 21:11:42 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/visualve/public_html/wp-content/themes/jxp-visual-verse/inc/template-tags.php on line 220
