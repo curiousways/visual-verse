@@ -20,7 +20,7 @@ echo '<div class="my_term-archive">';
 
     foreach ( $term_list as $key=>$value ) {
 		echo '<details>';
-        echo '<summary style="margin-top: 15px; margin-bottom: 15px; padding: 10px 10px 7px 10px; background-color: grey; border-radius: 10px; text-transform: uppercase;">' . $key . '</summary>';
+        echo '<summary>' . $key . '</summary>';
 
         foreach ( $value as $term ) {
 

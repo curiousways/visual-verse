@@ -18,7 +18,7 @@ get_header(); ?>
 
 			</div>
 
-			<div class="l4-l12">
+			<div style="position: relative; margin-bottom: 100px;" class="l4-l12">
 				
 				<?php if ( have_posts() ) : ?>
 

@@ -81,8 +81,9 @@ Author URI: http://juxprose.com
 }
 
 .navigation-paging {
-	position: relative;
-	bottom: 30px;
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
 }
 
 
@@ -90,7 +91,16 @@ Author URI: http://juxprose.com
 details {
 
 	summary {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 10px 10px 7px 2px;
+		text-transform: uppercase;
+		border: none;
+		border-bottom: 1px solid #959595;
 		position: relative;
+		outline: 0;
+		-moz-outline-style: none;
+		cursor: pointer;
 
 		&:after {
 			content: "⌄";
