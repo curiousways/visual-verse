@@ -20,63 +20,93 @@ Author URI: http://juxprose.com
 /* Menus
   -------------------------------------------------------- */
 
-	.menu {
+.menu {
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.menu-inline {
+
+	>li {
+		margin-right: $base-num;
 
 		a {
-			text-decoration: none;	
+			@include inline-block;
+			padding: $base-num;
 		}
 	}
+}
 
-	.menu-inline {
+.menu-stacked {
 
-		> li {
-			margin-right: $base-num;
-
-			a {
-				@include inline-block;
-				padding: $base-num;				
-			}
-		}
+	>li {
+		border-bottom: 1px solid $base-clr;
+		margin-bottom: $base-num;
+		padding-bottom: $base-num;
+		position: relative;
+		line-height: 18px;
 	}
+}
 
-	.menu-stacked {
+.menu-blocks {
 
-		> li {
-			border-bottom: 1px solid $base-clr;
-			margin-bottom: $base-num;
+	>li {
+		@extend .menu-inline;
+
+		a {
+			@include links-light;
+			@include single-transition(all, 0.2s, ease-in-out);
+			background: $base-clr;
+			padding-top: $base-num;
 			padding-bottom: $base-num;
-			position: relative;
-			line-height: 18px;
-		}
-	}
 
-	.menu-blocks {
-
-		> li {
-			@extend .menu-inline;
-			
-			a {
-				@include links-light;
-				@include single-transition(all, 0.2s, ease-in-out);
-				background: $base-clr;
-				padding-top: $base-num;
-				padding-bottom: $base-num;				
-
-				&:hover {
-					background-color: lighten($base-clr, 20%);
-				}
-
-			}
-
-	  	// Wordpress on-states
-	  	&.current-menu-item, &.current_page_item, &.current-page-ancestor, &.current-post-ancestor, &.current-menu-parent &.current-post-parent {
+			&:hover {
 				background-color: lighten($base-clr, 20%);
 			}
 
 		}
-	}
 
-	.navigation-paging {
-		position: relative;
-		bottom: 30px;
+		// Wordpress on-states
+		&.current-menu-item,
+		&.current_page_item,
+		&.current-page-ancestor,
+		&.current-post-ancestor,
+		&.current-menu-parent &.current-post-parent {
+			background-color: lighten($base-clr, 20%);
+		}
+
 	}
+}
+
+.navigation-paging {
+	position: relative;
+	bottom: 30px;
+}
+
+
+//accordion archive 
+details {
+
+	summary {
+		position: relative;
+
+		&:after {
+			content: "⌄";
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			font-size: 15px;
+		}
+	}
+}
+
+details[open] {
+	summary {
+		&:after {
+			transform: rotate(180deg);
+			top: 9px;
+		}
+	}
+}
