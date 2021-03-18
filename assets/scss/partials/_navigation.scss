@@ -88,6 +88,14 @@ Author URI: http://juxprose.com
 
 
 //accordion archive 
+details>summary {
+	list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+	display: none;
+}
+
 details {
 
 	summary {
