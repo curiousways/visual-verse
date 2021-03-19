@@ -1,10 +1,7 @@
 <div class="list-sidebar">
 	<h3>Artists</h3>
 
-    <?php echo do_shortcode('[wpes_search_form wpessid="33268"]'); ?>
 
-<!-- 33015 local -->
-<!-- 33268 live -->
 
 	<nav>
 		
