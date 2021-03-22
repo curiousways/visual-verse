@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'jxp_visual_verse' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 style="margin-bottom: 20px;" class="page-title"><?php printf( __( 'Search Results for: %s', 'jxp_visual_verse' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -34,5 +34,5 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
