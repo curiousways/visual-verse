@@ -19,6 +19,12 @@ get_header(); ?>
 			</div>
 
 			<div style="position: relative; margin-bottom: 100px;" class="l4-l12">
+
+			Search by title:
+			<?php echo do_shortcode('[wpes_search_form wpessid="33317"]'); ?> 
+
+			<!-- local: 33026 -->
+			<!-- live: 33317 -->
 				
 				<?php if ( have_posts() ) : ?>
 

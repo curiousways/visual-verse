@@ -65,3 +65,20 @@ Author URI: http://juxprose.com
   .float-l {
     float: left;
   }
+
+
+  // Blog
+
+  .blog {
+    img {
+          object-fit: cover;
+          max-height: 180px;
+          margin-bottom: 20px;
+          }
+
+          .navigation-paging {
+            position: relative;
+            bottom: initial;
+          }
+    }
+

@@ -77,6 +77,14 @@ register_sidebar( array(
 
 add_action( 'widgets_init', 'jxp_visual_verse_widgets_init' );
 
+// enqueue bootstrap
+
+function register_bootstrap_style() {
+    wp_enqueue_style( 'bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' );
+}
+add_action( 'wp_enqueue_scripts', 'register_bootstrap_style' );
+
+
 /**
  * Enqueue scripts and styles
  */
@@ -148,3 +156,12 @@ add_action('wp_enqueue_scripts', 'els_load_scripts');
 if ( is_admin() && isset($_GET['activated'] ) && $pagenow == ‘themes.php’ ) {
 $wp_rewrite->flush_rules();
 }
+
+
+
+// Excerpt length
+
+function mytheme_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
