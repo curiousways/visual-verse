@@ -83,6 +83,12 @@ Author URI: http://juxprose.com
 }
 
 .post-template-default {
+
+  .content-area {
+    max-width: 80%;
+    margin: auto;
+  }
+
   .entry-content {
 
     h1,
