@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-	<div class="content-area">
+	<div class="content-area image-pages">
 		<div class="site-content" role="main">
 
 		<?php // Loop for "Images" post type
