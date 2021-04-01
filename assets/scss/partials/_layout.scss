@@ -20,75 +20,77 @@ Author URI: http://juxprose.com
 /* Site wrapper
   -------------------------------------------------------- */
 
-  .site {
-    margin: $base-num*2 auto;
-    padding: 0 $base-num;
-    max-width: 1040px;
-  }
+.site {
+  margin: $base-num*2 auto;
+  padding: 0 $base-num;
+  max-width: 1040px;
+}
 
 
 /* Site header
   -------------------------------------------------------- */
 
-  .site-header {
-    border-bottom: 1px dotted $clr-secondary;
-    margin-bottom: $base-num*2;
-    padding-bottom: $base-num; 
-  }
+.site-header {
+  border-bottom: 1px dotted $clr-secondary;
+  margin-bottom: $base-num*2;
+  padding-bottom: $base-num;
+}
 
-  .site-title {
-    img {
-      height: 128px;
-    }
+.site-title {
+  img {
+    height: 128px;
   }
+}
 
 
 /* Helpers
   -------------------------------------------------------- */
 
-  .group {
-    @include clearfix;
-  }
+.group {
+  @include clearfix;
+}
 
-  .align-r {
-    text-align: right;
-  }
+.align-r {
+  text-align: right;
+}
 
-  .align-l {
-    text-align: left;
-  }
+.align-l {
+  text-align: left;
+}
 
-  .float-r {
-    float: right;
-  }
+.float-r {
+  float: right;
+}
 
-  .float-l {
-    float: left;
-  }
+.float-l {
+  float: left;
+}
 
 
-  // Blog
+// Blog
 
-  .blog {
-    img {
-          object-fit: cover;
-          max-height: 180px;
-          margin-bottom: 20px;
-          }
-
-          .navigation-paging {
-            position: relative;
-            bottom: initial;
-          }
-    }
-
-  .image-pages {
-   .submission .in {
-    height: 780px;
-  }
-  .the-image img:nth-child(2) {
-    height: 780px;
+.blog {
+  img {
     object-fit: cover;
+    max-height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .navigation-paging {
+    position: relative;
+    bottom: initial;
   }
 }
 
+@media screen and (min-width: 964px) {
+  .image-pages {
+    .submission .in {
+      height: 780px;
+    }
+
+    .the-image img:nth-child(2) {
+      height: 780px;
+      object-fit: cover;
+    }
+  }
+}
