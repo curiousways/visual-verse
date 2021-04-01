@@ -85,13 +85,17 @@ Author URI: http://juxprose.com
 .post-template-default {
   .entry-content {
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
       margin-bottom: 10px;
     }
 
     p {
       font-size: 18px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
+      margin-top: 30px;
     }
 
     ul li {
