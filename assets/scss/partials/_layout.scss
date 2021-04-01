@@ -82,15 +82,7 @@ Author URI: http://juxprose.com
   }
 }
 
-@media screen and (min-width: 964px) {
-  .image-pages {
-    .submission .in {
-      height: 780px;
-    }
-
-    .the-image img:nth-child(2) {
-      height: 780px;
-      object-fit: cover;
-    }
-  }
+.shadow {
+  box-shadow: none !important;
 }
+

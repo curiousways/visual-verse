@@ -29,6 +29,12 @@ Author URI: http://juxprose.com
 // Normalize
 @import "partials/normalize"; 
 
+*,
+::after,
+::before {
+  box-sizing: content-box !important;
+}
+
 // Sass variables
 @import "partials/variables";
 
