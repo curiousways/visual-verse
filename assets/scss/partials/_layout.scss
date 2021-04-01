@@ -88,6 +88,11 @@ Author URI: http://juxprose.com
       font-size: 18px;
       margin-bottom: 15px;
     }
+
+    ul li {
+      font-size: 18px;
+      list-style-position: inside;
+    }
   }
 }
 
@@ -96,4 +101,3 @@ Author URI: http://juxprose.com
 .shadow {
   box-shadow: none !important;
 }
-
